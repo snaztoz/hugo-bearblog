@@ -1,1 +1,9 @@
-{{ if ne .Site.Params.hideMadeWithLine true }}Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>{{ end }}
+{{ if ne .Site.Params.hideMadeWithLine true }}
+<p>{{ .Site.Copyright }}</p>
+<p>
+  <small>
+    Ada saran, kritik, atau masukan? Hubungi saya melalui
+    <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+  </small>
+</p>
+{{ end }}
